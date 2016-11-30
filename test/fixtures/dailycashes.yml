@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-29
+  sale: 1
+  discount: 1
+  pay_card: 1
+  paid_online: 1
+  purchase: 1
+  driver_paid: 1
+  lodgement: 1
+  over_under: 1
+
+two:
+  date: 2016-11-29
+  sale: 1
+  discount: 1
+  pay_card: 1
+  paid_online: 1
+  purchase: 1
+  driver_paid: 1
+  lodgement: 1
+  over_under: 1

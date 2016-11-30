@@ -1,0 +1,62 @@
+<%= form_for(dailycash) do |f| %>
+  <% if dailycash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dailycash.errors.count, "error") %> prohibited this dailycash from being saved:</h2>
+
+      <ul>
+      <% dailycash.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sale %>
+    <%= f.number_field :sale %>
+  </div>
+
+  <div class="field">
+    <%= f.label :discount %>
+    <%= f.number_field :discount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pay_card %>
+    <%= f.number_field :pay_card %>
+  </div>
+
+  <div class="field">
+    <%= f.label :paid_online %>
+    <%= f.number_field :paid_online %>
+  </div>
+
+  <div class="field">
+    <%= f.label :purchase %>
+    <%= f.number_field :purchase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :driver_paid %>
+    <%= f.number_field :driver_paid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lodgement %>
+    <%= f.number_field :lodgement %>
+  </div>
+
+  <div class="field">
+    <%= f.label :over_under %>
+    <%= f.number_field :over_under %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

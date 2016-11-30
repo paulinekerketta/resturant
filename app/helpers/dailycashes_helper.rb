@@ -1,0 +1,2 @@
+module DailycashesHelper
+end

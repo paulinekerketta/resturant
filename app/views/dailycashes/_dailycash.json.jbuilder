@@ -1,0 +1,2 @@
+json.extract! dailycash, :id, :date, :sale, :discount, :pay_card, :paid_online, :purchase, :driver_paid, :lodgement, :over_under, :created_at, :updated_at
+json.url dailycash_url(dailycash, format: :json)

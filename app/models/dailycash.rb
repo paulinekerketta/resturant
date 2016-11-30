@@ -1,0 +1,2 @@
+class Dailycash < ApplicationRecord
+end
